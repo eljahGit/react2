@@ -1,0 +1,15 @@
+body{
+    margin: 0px;
+}
+
+ul{
+    list-style: none;  /*elimina los bullets de los ul */
+    padding: 0px; /*sobreescribe estilo xdefault de "user agent styleshhet" propio del navegador", y evita margen*/
+    margin: 0px;
+}
+
+.navbar{
+    display: flex; /* display flex ubica los elementos ul en forma horizontal*/
+    justify-content: space-between; /*separa los elementos entre sí, ocupando todo el espacio posible*/
+    padding: 10px;
+}
