@@ -43,3 +43,4 @@ ul{
 .secondaryButton:hover{       /*agregando modificador a la clase mediante 2 puntos */
     box-shadow: 2px 2px rgb(60, 24, 128);      /*la sombra del boton aumenta a 2px cuando el cursor pasa encima*/
     background-color: rgb(79, 95, 167);                 /*el bg cambia cuando el cursor pasa encima*/ 
+}
