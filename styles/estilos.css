@@ -78,3 +78,24 @@ ul{
 .iconobusqueda:hover{
 color: blue;                         /*el icono lupa cambia a azul cuando pasa el mouse */
 }
+
+.contenedorEscudos{
+display: flex;                         /*ubica las imagenes horizontalmente una al lado de otra*/
+flex-wrap: wrap;                       /*evita que las cards se desborden hacia la derecha */
+}
+
+.tarjetaEquipo{
+margin: 10px;                          /*separa tarjetas 10px entre si*/
+}
+
+.contenedorImagen{
+width: 240px;                         /*fija alto, ancho, del cont div */
+height: 350px;
+display: flex;                        /*display: tipo de visualizaion inter y ext de un elemento*/
+}
+
+.contenedorImagen>img{
+object-fit: cover; 
+width: 100%;                          /*iguala toda imagen del contenedor al tamaño de este*/
+}
+
