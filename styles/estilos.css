@@ -28,8 +28,8 @@ ul{
 
 .button{
     border: 0px;         /* elimina el borde por defecto que trae el boton */
-    padding: 5px 10px;   /* distancia del contenido hacia los bordes del boton l-u-r-d*/
-    border-radius: 10px; /* para redondear el boton */
+    padding: 10px 5px;   /* distancia del contenido hacia los bordes del boton l-u-r-d*/
+    border-radius: 8px; /* para redondear el boton */
     font-weight: bolder; /* aumentando el grosor de la fuente */
 }
 
@@ -86,16 +86,47 @@ flex-wrap: wrap;                       /*evita que las cards se desborden hacia 
 
 .tarjetaEquipo{
 margin: 10px;                          /*separa tarjetas 10px entre si*/
+border: 1px solid gray;              /*crea linea alrededor de tarjeta*/
+border-radius: 10px;
+box-shadow: 5px 10px 15px;
+background-color: gray;
+}
+
+.tituloTarjeta{
+color: white;
+margin: 10px; 
+font-weight: bold;
+font-size: x-large;  
 }
 
 .contenedorImagen{
 width: 240px;                         /*fija alto, ancho, del cont div */
 height: 350px;
 display: flex;                        /*display: tipo de visualizaion inter y ext de un elemento*/
+margin-bottom: 10px;
+}
+
+.contenedorImagen:hover{
+cursor: pointer;
+transform: scale(1.1);
 }
 
 .contenedorImagen>img{
 object-fit: cover; 
 width: 100%;                          /*iguala toda imagen del contenedor al tamaño de este*/
+background-color: white;
 }
 
+h1{
+color:gray;
+text-align: center;    
+}
+
+footer{    
+background-color:rgb(205, 211, 212); 
+text-align: center;  
+font-weight: bold; 
+padding: 10px;
+margin: 10px 0px;
+border-radius: 5px;
+}
