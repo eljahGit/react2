@@ -1,0 +1,65 @@
+body{
+    margin: 0px;
+}
+
+ul{
+    list-style: none;  /*elimina los bullets de los ul */
+    padding: 0px; /*sobreescribe estilo xdefault de "user agent styleshhet" propio del navegador", y evita margen*/
+    margin: 0px;
+}
+
+.navbar{
+    display: flex; /* display flex ubica los elementos ul en forma horizontal*/
+    justify-content: space-between; /*separa los elementos entre sí, ocupando todo el espacio posible*/
+    padding: 10px;
+}
+
+.logo{
+    height: 70px;
+}
+
+.button{
+    border: 0px;         /* elimina el borde por defecto que trae el boton */
+    padding: 5px 10px;   /* distancia del contenido hacia los bordes del boton l-u-r-d*/
+    border-radius: 10px; /* para redondear el boton */
+    font-weight: bolder; /* aumentando el grosor de la fuente */
+}
+
+.button:hover{
+    cursor: pointer;                           /*el puntero cambia a mano cuando pasa sobre el boton */
+    transform: scale(1.1);                     /*el tamaño del boton aumenta 10% cuando el cursor pasa encima*/
+}
+.mainButton{
+    background-color:limegreen;
+    color: white;
+    box-shadow: 1px 1px darkolivegreen;
+}
+.mainButton:hover{                             /*agregando modificador a la clase mediante 2 puntos */
+    box-shadow: 2px 2px darkolivegreen;      /*la sombra del boton aumenta a 2px cuando el cursor pasa encima*/
+    background-color: green;                 /*el bg cambia cuando el cursor pasa encima*/ 
+    
+}   
+.secondaryButton{
+    background-color:rgb(155, 183, 243);
+    color: white;
+    box-shadow: 1px 1px darkolivegreen;
+}
+.secondaryButton:hover{       /*agregando modificador a la clase mediante 2 puntos */
+    box-shadow: 2px 2px rgb(60, 24, 128);      /*la sombra del boton aumenta a 2px cuando el cursor pasa encima*/
+    background-color: rgb(79, 95, 167);                 /*el bg cambia cuando el cursor pasa encima*/ 
+}
+.buscar{
+    background-color: white;
+    border: 1px solid gray;         /*borde al div inclue input e icono*/
+    padding: 4px;                     /**ajustando que el icono no quede tan al borde */
+    border-radius: 8px;               /*redondeando el borde del input+logo*/ 
+}
+
+.buscar:focus-within{
+    border: 1px solid blue;         /*cambia el color del borde de busqueda al hacer click */
+}
+
+.buscar> input{
+    outline: 0px;                      /*elimina el borde del input cuando se hace click*/ 
+    border: 0px;                       /*elimina el borde del input*/
+}
