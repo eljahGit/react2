@@ -12,6 +12,14 @@ ul{
     display: flex; /* display flex ubica los elementos ul en forma horizontal*/
     justify-content: space-between; /*separa los elementos entre sí, ocupando todo el espacio posible*/
     padding: 10px;
+    background-color: rgb(205, 211, 212);       /*aplicando bg a la barra de navegacion */
+    border-bottom: 1px solid gray;              /*linea de separacion inferior de la barra de navegacion */ 
+    box-shadow: 1px 1px gray;                   /*sombra a la linea de separacion de barra de nav */
+}
+
+.navbar>li{
+    display: flex;
+    align-items: center;                          /*alinea items li dentro de navbar al centro */ 
 }
 
 .logo{
@@ -53,6 +61,9 @@ ul{
     border: 1px solid gray;         /*borde al div inclue input e icono*/
     padding: 4px;                     /**ajustando que el icono no quede tan al borde */
     border-radius: 8px;               /*redondeando el borde del input+logo*/ 
+    width: 300px;
+    display: flex;
+    justify-content: space-between;
 }
 
 .buscar:focus-within{
@@ -62,4 +73,8 @@ ul{
 .buscar> input{
     outline: 0px;                      /*elimina el borde del input cuando se hace click*/ 
     border: 0px;                       /*elimina el borde del input*/
+}
+
+.iconobusqueda:hover{
+color: blue;                         /*el icono lupa cambia a azul cuando pasa el mouse */
 }
