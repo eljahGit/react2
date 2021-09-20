@@ -13,3 +13,19 @@ ul{
     justify-content: space-between; /*separa los elementos entre sí, ocupando todo el espacio posible*/
     padding: 10px;
 }
+
+.buscar{
+    background-color: white;
+    border: 1px solid gray;         /*borde al div inclue input e icono*/
+    padding: 4px;                     /**ajustando que el icono no quede tan al borde */
+    border-radius: 8px;               /*redondeando el borde del input+logo*/ 
+}
+
+.buscar:focus-within{
+    border: 1px solid blue;         /*cambia el color del borde de busqueda al hacer click */
+}
+
+.buscar> input{
+    outline: 0px;                      /*elimina el borde del input cuando se hace click*/ 
+    border: 0px;                       /*elimina el borde del input*/
+}
