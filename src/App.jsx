@@ -1,3 +1,4 @@
+import CardTeam from './components/CardTeam';
 import './styles/estilos.css';
 import conmebol from './media/conmebol.png';
 import arg from './media/arg.jpg';
@@ -53,17 +54,6 @@ function App() {
       </main>
       <footer>2021 Contacto: alguien@outlook.com </footer>
     </div>
-  );
-}
-
-function CardTeam ({equipo, imagen}){
-  return(
-    <li className='tarjetaEquipo'>
-      <div className='contenedorImagen'>
-        <img src={imagen} alt={equipo} />
-      </div>
-      <span className='tituloTarjeta'>{equipo}</span>
-    </li>
   );
 }
   export default App;
