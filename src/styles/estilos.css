@@ -115,6 +115,7 @@ transform: scale(1.1);
 object-fit: cover; 
 width: 100%;                          /*iguala toda imagen del contenedor al tamaño de este*/
 background-color: white;
+border-radius: 10px;
 }
 
 h1{
